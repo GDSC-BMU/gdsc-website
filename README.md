@@ -2,13 +2,13 @@
 This is the repo for building the website for GDSC-BMU
 
 ## How to run
-- make sure you have node setup up in your system
-- navigate to the `website` folder
-- open terminal and run `npm i` and `npm run dev`
-
-## How to contribute
 - Fork the repository
 - Clone the repository using `git clone`
+- make sure you have node setup up in your system
+- navigate to the `website` folder
+- open terminal and run `npm i` and then `npm run dev`
+
+## How to contribute
 - Make your changes
 - step 1 `git add .`
 - Commit and push your changes using `git commit -m "<your-commit-message>"` and `git push`
