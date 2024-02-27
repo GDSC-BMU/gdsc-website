@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Sidenav from './components/sidenav'
+import ShuffleLetters from './components/sidenav'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Sidenav/>
+      <ShuffleLetters/>
     </>
   )
 }
