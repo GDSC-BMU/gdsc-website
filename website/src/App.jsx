@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import ShuffleLetters from './components/sidenav'
+import Navbar from './components/sidenav'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <ShuffleLetters/>
+      <Navbar/>
     </>
   )
 }
