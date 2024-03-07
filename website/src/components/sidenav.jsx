@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import assets from '../assets/assets';
-
+import assets from "../assets/assets";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -68,10 +67,15 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-black p-6">
+      <nav className="bg-white p-6">
         <div className="flex items-center justify-between flex-wrap">
-          <div className="flex items-center flex-shrink-0 h-7  ">
-            <img src={assets.navbrimg2} alt="Logo" className="h-10 w-auto" />
+          <div className="grid grid-flow-col">
+            <div className=" flex-shrink-0 h-7 ">
+              <img src={assets.navbrimg2} alt="Logo" className="h-10 w-auto" />
+            </div>
+            <div className="flex-shrink-0 h-7 ml-4 ">
+              <img src={assets.navbarimg3} alt="Logo" className="h-10 w-auto hidden sm:block md:block" />
+            </div>
           </div>
           <div className="block lg:hidden">
             <button
@@ -121,7 +125,7 @@ const Navbar = () => {
                 onClick={() => setToggle(false)}
               >
                 <svg
-                  className="h-5 w-5 fill-current"
+                  className="h-5 w-5 fill-current "
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -136,13 +140,17 @@ const Navbar = () => {
             )}
             <ul
               className={`${
-                toggle
-                  ? "flex-col  justify-center text-start gap-8 md:gap-8"
-                  : "flex-row"
-              } flex justify-center items-center gap-4 md:gap-16 text-white text-right text-[2rem] lg:text-[1.15rem] lg:mr-5`}
-            >
+    toggle
+      ? "flex-col justify-center text-start gap-8 md:gap-8"
+      : "flex-row"
+  } flex justify-center items-center gap-4 md:gap-16 lg:mr-5 ${
+    toggle ? "text-white" : "text-black"
+  } ${
+    toggle ? "text-[2rem]" : "text-lg"
+  } lg:text-[1.15rem]`}
+>
               <li>
-                <a href="#" className="hover:text-red-600 shuffle" >
+                <a href="#" className="hover:text-red-600 shuffle">
                   ABOUT
                 </a>
               </li>
